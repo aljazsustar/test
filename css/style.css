@@ -1,0 +1,48 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-right {
+    margin-left: 1em;
+}
+
+.calendar-container {
+    margin-top: 1em;
+    display: grid;
+    border: 1px gray solid;
+    padding: 0.5em;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.calendar-container > div{
+    text-align: center;
+}
+
+.calendar-container > div.holiday {
+    background-color: rgba(0, 153, 204, .3);
+}
+
+.calendar-container > div.sunday {
+    background-color: rgba(255, 153, 153, .3);
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px gray solid;
+    padding: 0.5em;
+}
+
+select {
+    background-color: white;
+}
+
+input#year {
+    padding: 0.65em;
+}

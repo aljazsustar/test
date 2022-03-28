@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-left">
+                <input type="date" id="date" onchange="dateSelected(this)">
+            </div>
+            <div class="input-right">
+                <select name="month" id="month" onchange="monthSelected(this)">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3" selected>March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <input type="text" id="year" class="year" value="2022" onchange="yearChanged(this)">
+            </div>
+        </div>
+        <div class="calendar-container">
+            <div><span>Monday</span></div>
+            <div><span>Tuesday</span></div>
+            <div><span>Wednesday</span></div>
+            <div><span>Thursday</span></div>
+            <div><span>Friday</span></div>
+            <div><span>Saturday</span></div>
+            <div><span>Sunday</span></div>
+
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>
